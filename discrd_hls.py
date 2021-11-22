@@ -248,11 +248,11 @@ def main(nom_vid: str, fecha_vid: str, stream_vid: str, url_vid: str):
     for i in range(len(lista_frag)):
         with open("./" + dir_vid + "/" + nom_vid + "_" + str(cont_frag) + ".ts", "ab") as arch_ts:
             peso_arch = os.stat("./" + dir_vid + "/" + nom_vid + "_" + str(cont_frag) + ".ts").st_size
-            peso_arch = peso_arch/1024/1024/1024
+            peso_arch = peso_arch/1024/1024
             with open("./ts/" + str(i) + ".ts", "rb") as fragmento:
                 peso_frag = os.stat("./ts/" + str(i) + ".ts").st_size
-                peso_frag = peso_frag/1024/1024/1024
-                if peso_arch + peso_frag > 1.8:
+                peso_frag = peso_frag/1024/1024
+                if peso_arch + peso_frag > 7.5:
                     cont_frag += 1
                 arch_ts.write(fragmento.read())
             os.remove("./ts/" + str(i) + ".ts")
