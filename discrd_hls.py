@@ -259,8 +259,8 @@ def main(nom_vid: str, fecha_vid: str, stream_vid: str, url_vid: str):
     os.rmdir("ts")
     crearTxtProp("./" + dir_vid + "/")
 
-nombre = "Viktor Volkov | TURNO NOCTURNO EN EL FBI |  !NewSkill"
-fecha = "22-09-2021"
-streamer = "momonkunn"
-url_vid = "https://dgeft87wbj63p.cloudfront.net/9483db3d8a7fdf202cc7_momonkunn_43336012588_1632348739/chunked/index-dvr.m3u8"
+nombre = "😱🏆 REACCIONANDO A MI REGALO DEL AMIGO INVISIBLE Y TWITCH RIVALS DE MINECRAFT 🏆😱"
+fecha = "23-09-2021"
+streamer = "thegrefg"
+url_vid = "https://dgeft87wbj63p.cloudfront.net/136730a2ad8676beca55_thegrefg_43340726636_1632409300/chunked/index-muted-JMSKPM462M.m3u8"
 main(nombre, fecha, streamer, url_vid)
