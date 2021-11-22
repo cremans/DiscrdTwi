@@ -266,10 +266,9 @@ def main(vodID):
     os.system("echo Comando:")
 
     os.system("mkdir " + vodID)
-    os.system('echo winrar.exe a -afrar -df -m5 -mt3 -ri15 -t -tk -ts -v95m ".\\' + vodID + '\\' + nom_vid +
+    os.system('echo winrar.exe a -afrar -df -m5 -mt3 -ri15 -t -tk -ts -v7m ".\\' + vodID + '\\' + nom_vid +
               '.rar" "' + nom_vid + '.mp4"')
-    os.system('winrar.exe a -afrar -df -m5 -mt3 -ri15 -t -tk -ts -v95m ".\\' + vodID + '\\' + nom_vid +
+    os.system('winrar.exe a -afrar -df -m5 -mt3 -ri15 -t -tk -ts -v7m ".\\' + vodID + '\\' + nom_vid +
              '.rar" "' + nom_vid + '.mp4"')
 
 main("1119113583")
-main("1119109489")
