@@ -1,4 +1,4 @@
-name: DscTwi
+name: DscTwiHLS
 
 on: workflow_dispatch
 
