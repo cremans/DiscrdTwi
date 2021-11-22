@@ -18,15 +18,6 @@ jobs:
     - name: Descarga Ejecut
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/cremans/DiscrdTwi/main/discrd_hls.py -OutFile "C:\1Twitch\discrd_hls.py"
-        Invoke-WebRequest https://raw.githubusercontent.com/cremans/AutoTwi/main/WinRAR.exe -OutFile "C:\1Twitch\WinRAR.exe"
-        Invoke-WebRequest https://raw.githubusercontent.com/cremans/AutoTwi/main/ffmpeg.zip -OutFile "C:\1Twitch\ffmpeg.zip"
-    - name: Descomprimir Conver Video
-      run: |
-        cd "C:\1Twitch"
-        Expand-Archive ffmpeg.zip
-        Move-Item -Path "C:\1Twitch\ffmpeg\ffmpeg.exe" -Destination "C:\1Twitch"
-        Remove-Item "ffmpeg"
-        Remove-Item "ffmpeg.zip"
     - name: Ejecutando Auto
       run: |
         cd "C:\1Twitch"
